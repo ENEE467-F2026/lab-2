@@ -23,7 +23,7 @@ To build the Docker image, ensure that you have [Docker](https://www.docker.com/
 * Clone the hardware branch of this repository and navigate to the `docker` folder
     ```
     cd ~/Labs
-    git clone -b hardware https://github.com/ENEE467-F2025/lab-2.git lab-2-hw
+    git clone -b hardware https://github.com/ENEE467-F2026/lab-2.git lab-2-hw
     cd lab-2-hw/docker
     ```
 * Build the image with Docker compose
@@ -37,7 +37,7 @@ The lab computers contain a prebuilt image so you will not have to build the ima
 * Clone the hardware branch to get the lab-2 code if you haven't done so already
     ```
     cd ~/Labs
-    git clone -b hardware https://github.com/ENEE467-F2025/lab-2.git lab-2-hw
+    git clone -b hardware https://github.com/ENEE467-F2026/lab-2.git lab-2-hw
     cd lab-2-hw/docker
     ```
 * Run the Docker container
