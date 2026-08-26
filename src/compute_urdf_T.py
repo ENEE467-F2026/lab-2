@@ -38,7 +38,7 @@ def main():
     link_names = [link._name for link in robot.links]
 
     ####################################
-    # TODO: Question 2(a)
+    # TODO: Question 1(a)
     ####################################
     q_test = robot.Configuration(
                                 joints=robot.actuated_joints,
@@ -62,7 +62,7 @@ def main():
             print(f"\nCould not compute transformation for {link}: {e}")
 
     ####################################
-    # TODO: Question 5(a)
+    # TODO: Question 1(a)
     # Chain the SE3s in the SE3_list you populated above in 
     # the specified traversal order using matrix multiplication
     # NOTE:
@@ -74,7 +74,7 @@ def main():
     SE3_prod = sm.SE3(SE3_prod_mat)
 
     ####################################
-    # TODO: Question 5(b)
+    # TODO: Question 1(b)
     
     ####################################
     SE3_base_tool0 = None

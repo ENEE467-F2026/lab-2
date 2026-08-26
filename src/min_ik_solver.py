@@ -74,7 +74,7 @@ def compute_ik(robot: Robot,
             error = np.hstack((dt, dr)).reshape((-1, 1))  # 6x1 column
 
             ########################################################################
-            #                 TODO: Exercise 3(a)
+            #                 TODO: Exercise 2(a)
             ########################################################################
             # use Equation 12 to check for task-space convergence
             
@@ -101,7 +101,7 @@ def compute_ik(robot: Robot,
                         J_pinv = J.T @ np.linalg.inv(JJt + (damp_factor**2) * np.eye(JJt.shape[0]))
                     else:
                         ########################################################################
-                        #                 TODO: Exercise 3(a)
+                        #                 TODO: Exercise 2(a)
                         ########################################################################
                         # compute the Jacobian pseudo inverse using Numpy's linalg.pinv
                         J_pinv = None
@@ -111,7 +111,7 @@ def compute_ik(robot: Robot,
                     JJt = J @ J.T
                     J_pinv = J.T @ np.linalg.inv(JJt + (damp_eps**2) * np.eye(JJt.shape[0]))
                 ########################################################################
-                #                 TODO: Exercise 3(a)
+                #                 TODO: Exercise 2(a)
                 ########################################################################
                 # update iterate using Equation 11
                 delta_q = (J_pinv @ error).flatten() # see Equation 11
@@ -140,7 +140,7 @@ def main():
     # Enter the test SE3 poses here
     se3_examples = [
         ########################################################################
-        #                 TODO: Exercise 3(a)
+        #                 TODO: Exercise 2(a)
         ######################################################################## 
     ]
 
@@ -170,7 +170,7 @@ def main():
 
         # Check FK for min solver result
         ########################################################################
-        #                 TODO: Exercise 3(c)
+        #                 TODO: Exercise 2(c)
         ######################################################################## 
 
 if __name__=='__main__':

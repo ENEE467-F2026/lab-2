@@ -20,7 +20,7 @@ import roboticstoolbox as rtb # import the Toolbox
 
 robot = rtb.models.UR3() # Load a UR3 model
 
-# TODO: Question 5(c)
+# TODO: Question 1(c)
 q = None 
 
 T = robot.fkine(
