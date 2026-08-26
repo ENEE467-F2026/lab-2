@@ -48,7 +48,7 @@ The lab computers contain a prebuilt image so you will not have to build the ima
     ```
     (lab-2) robot@docker-desktop:~$
     ```
-* Edit the lab-2 Python code within `lab-2/src` from a VS Code editor on the host machine. The repo directory `lab-2/src` is mounted into the Docker container at `/home/robot/lab-2/src`, so all changes are reflected **inside** the container.
+* Edit the lab-2 Python code within `lab-2-hw/src` from a VS Code editor on the host machine. The repo directory `lab-2-hw/src` is mounted into the Docker container at `/home/robot/lab-2/src`, so all changes are reflected **inside** the container.
 
 * With the UR3e powered on and reachable on the network, run the validation script from the terminal running the container:
     ```
