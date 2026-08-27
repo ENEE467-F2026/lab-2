@@ -28,7 +28,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends --allow-unauthe
     vim \
     tree \
     pkg-config \
-    software-properties-common \
     sudo \
     tmux \
     tzdata \
