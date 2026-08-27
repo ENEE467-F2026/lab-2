@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM continuumio/miniconda3:26.5.3
 
 SHELL ["/bin/bash", "-c"]
 
