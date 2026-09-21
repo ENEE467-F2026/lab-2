@@ -35,6 +35,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends --allow-unauthe
     python3-tk \
     x11proto-gl-dev && \
     rm -rf /var/lib/apt/lists/*
+    
+# ping from within docker container    
+RUN setcap cap_net_raw+ep /bin/ping
 
 # install VS Code server
 RUN curl -fsSL https://code-server.dev/install.sh | sh
